@@ -197,11 +197,7 @@ h2 {
   font-size: 50px;
   padding: 40px 0px 60px;
 }
-#sitefooter {
-  height: 300px;
-  margin-top: 200px;
-  background-color: #F1F3F4;
-}
+
 hr.soft {
   border: 0;
   height: 1px;
@@ -353,4 +349,24 @@ hr.soft {
   font-size: 20px;
   margin-bottom: 20px;
   font-weight: 300;
+}
+
+#footer {
+  height: 80px;
+  margin-top: 30px;
+  background-color: #F1F3F4;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-section {
+  background-color: #F1F3F4;
+}
+
+.footer-section p {
+  padding-top: 30px;
+  margin-left: 50px;
+  text-align: left;
+  font-size: 11px;
+  color: #b3b3b3;
 }
