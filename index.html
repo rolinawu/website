@@ -8,8 +8,14 @@
   <title>Rolina Wu's Homepage</title>
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="style.css" rel="stylesheet">
+  <link href="css/demo-slideshow.css" rel="stylesheet">
   <link rel="shortcut icon" href="img/R.png">
   <link rel="icon" href="img/R.png">
+<!-- include Cycle2 -->
+<script src="js/jquery.js"></script>
+<script src="js/jquery.cycle2.js"></script>
+<script src="js/jquery.cycle2.min.js"></script>
+<script src="js/jquery.cycle2.caption2.min.js"></script>
 
 
 </head>
@@ -137,19 +143,10 @@
 
       <div class="miscitem">
         <div class="miscimg">
-          <img src="img/github.jpg" class="img-circle">
-        </div>
-        <div class="miscd">
-          Find me on <a href="https://github.com/rolinawu">Github</a> and <a href="http://www.goodreads.com/">Goodreads</a>.
-        </div>
-      </div>
-
-      <div class="miscitem">
-        <div class="miscimg">
           <div class="colorrect img-circle"></div>
         </div>
         <div class="miscd">
-          I enjoy research, both through doing experiments in the laboratory and through massive Googling and paper reading. Last summer we talked about GMOs for a section in Living Skills, which inspired me to do some after school research on the topic (<a href = "http://www.slideshare.net/rolinawu/gmos-42071688" target="blank">slideshow</a>).
+          I enjoy <span class="thigh">research</span>, both through doing experiments in the laboratory and through massive Googling and paper reading. Last summer we talked about GMOs for a section in Living Skills, which inspired me to do some after school research on the topic (<a href = "http://www.slideshare.net/rolinawu/gmos-42071688" target="blank">slideshow</a>).
         </div>
       </div>
 
@@ -167,7 +164,7 @@
           <div class="colorrect img-circle"></div>
         </div>
         <div class="miscd">
-          I love photography. Some of my work has been featured (<a href="http://nytimes.com/projects/2013/lens-my-hometown/?name=Rolina_Wu&amp;page=1">NYTimes</a>, <a href="http://liberatinglens.org/rolina-w-palo-alto-high-school/">Liberating Lens</a>, and <a href="http://www.sustainablesv.org/ssv2013/index.php/events/west-summit/call-for-art/call-for-art-2014">WEST Summit Conference</a>). I volunteer my services at community events. If you have an event that you would like to have photographed, <a href="mailto:rolina79@qq.com">contact me</a>!
+          I love <span class="page-scroll"><a href="#photographs">photography</a></span>. Some of my work has been featured (<a href="http://nytimes.com/projects/2013/lens-my-hometown/?name=Rolina_Wu&amp;page=1">NYTimes</a>, <a href="http://liberatinglens.org/rolina-w-palo-alto-high-school/">Liberating Lens</a>, and <a href="http://www.sustainablesv.org/ssv2013/index.php/events/west-summit/call-for-art/call-for-art-2014">WEST Summit Conference</a>). I volunteer my services at community events. If you have an event that you would like to have photographed, <a href="mailto:rolina79@qq.com">contact me</a>!
         </div>
       </div>
 
@@ -269,46 +266,79 @@
 </div>
 
 <hr class="soft">
-<!-- add a comment here -->
-<div class="container" id="Portfolio">
-  <h2>Portfolio</h2>
-  <div class="row">
-    <div class="col-md-4">
-      <div class="pp">
-        <a href="drawings.html" target="blank">
-        <img src="img/tempdrawings.jpg" class="img-circle imgb">
-        </a>
-        <div class="ppt">Drawings</div>
-        <div class="ppd">
-          A sample of my sketch book with some drawings I've made over the years.
-        </div>
 
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="pp">
-        <a href="photographs.html" target="blank">
-          <img src="img/tempphotographs.jpg" class="img-circle imgb">
-        </a>
-        <div class="ppt">Photographs</div>
-        <div class="ppd">
-           I like using the camera to capture static and dynamic aspects of the world that go unnoticed.
-        </div>
-      </div>
-    </div>
-    <div class="col-md-4">
-      <div class="pp">
-        <a href="diy.html" target="blank">
-          <img src="img/tempraspberrypi.jpg" class="img-circle imgb">
-        </a>
-        <div class="ppt">DIY projects</div>
-        <div class="ppd">
-          I like building Raspberry Pi projects. One of my favorite books for this is <a href="http://www.amazon.com/Raspberry-Pi-Projects-Evil-Genius/dp/0071821589/">Raspberry Pi for the Evil Genius</a>, which is more awesome than it is evil.
-        </div>
-      </div>
+<div class="container" id="photographs">
+  <h2>Photographs</h2>
+  <h3>Abstract / Commentary</h3>
+  <div class="row">
+    <div class="cycle-slideshow slider" 
+      data-cycle-fx=scrollHorz
+      data-cycle-timeout=2000
+      data-cycle-overlay-template="<span class=left>&nbsp;{{slideNum}} / {{slideCount}}</span><span>{{desc}}</span>"
+      data-cycle-center-horz=true data-cycle-center-vert=true
+      >
+      <!-- empty element for overlay -->
+      <div class="cycle-overlay custom"></div>
+
+        <img src="photos/abstract/painting.JPG" data-cycle-title="Time" data-cycle-desc="Ready for painting">
+        <img src="photos/abstract/time.JPG" data-cycle-title="Time" data-cycle-desc="Time">
+        <img src="photos/abstract/partner.JPG" data-cycle-title="Time" data-cycle-desc="Partners in Crime">
+        <img src="photos/abstract/outofplacewhereibelong.JPG" data-cycle-desc="Out of Place Where I Belong">
+        <img src="photos/abstract/road.JPG" data-cycle-desc="The road less traveled">
+        <img src="photos/scenery/crackinroad.JPG" data-cycle-desc="Crack in road">
+        <img src="photos/abstract/inside.JPG" data-cycle-desc="Inside">
+        <img src="photos/abstract/energy.JPG" data-cycle-desc="Energy">
+        <img src="photos/abstract/destruction.JPG" data-cycle-desc="Destruction">
+        <img src="photos/abstract/vineyard.PNG" data-cycle-desc="Vineyard">
+        <img src="photos/culture/rhythmoflife.JPG" data-cycle-desc="Rhythm Of Life">
+        <img src="photos/scenery/blue.JPG" data-cycle-desc="Seeing blue">
+        <img src="photos/abstract/athousandhands.JPG" data-cycle-desc="A Thousand Hands">
+        <img src="photos/culture/lotteryoflife.JPG" data-cycle-desc="The Lottery of Life">
+        <img src="photos/abstract/freewater.JPG" data-cycle-desc="Free Water">
+        <img src="photos/scenery/streetlight.JPG" data-cycle-desc="Street light">
+        <img src="photos/culture/temple.JPG" data-cycle-desc="Temple">
+        <img src="photos/abstract/gravity.JPG" data-cycle-desc="Gravity">
+
+        <script src="js/jquery.cycle2.min.js"></script>
+        <script src="js/jquery.cycle2.caption2.min.js"></script>
+        <script src="js/jquery.cycle2.center.js"></script>
     </div>
   </div>
+  <h3>Culture / Life</h3>
+  <div class="row">
+    <div class="cycle-slideshow slider" 
+      data-cycle-fx=scrollHorz
+      data-cycle-timeout=3000
+      data-cycle-overlay-template="<span class=left>&nbsp;{{slideNum}} / {{slideCount}}</span><span>{{desc}}</span>"
+      data-cycle-center-horz=true data-cycle-center-vert=true
+      >
+      <!-- empty element for overlay -->
+      <div class="cycle-overlay custom"></div>
+        <img src="photos/culture/lookingback.JPG" data-cycle-desc="My father looking back at his hometown">
+        <img src="photos/culture/hometown.JPG" data-cycle-desc="This is where my father grew up during the Great Leap Forward">
+        <img src="photos/culture/storage.JPG" data-cycle-desc="Storing for the winter">
+        <img src="photos/culture/cooking.JPG" data-cycle-desc="Simple cooking in rural China">
+        <img src="photos/culture/carving.JPG" data-cycle-desc="Carvings on a drum set. XiAn, China">
+        <img src="photos/culture/culture.JPG" data-cycle-desc="A holy house of birds. XiAn, China">
+        <img src="photos/culture/lanterns.JPG" data-cycle-desc="Lanterns along a castle wall">
+        <img src="photos/culture/emperorwu.JPG" data-cycle-desc="A gender-ambiguous lion statue guarding Emperor WuZeTian's tomb">
+        <img src="photos/scenery/bigsur.JPG" data-cycle-desc="A road trip down to Big Sur">
+        <img src="photos/scenery/emptybench.JPG" data-cycle-desc="An empty bench">
+        <img src="photos/scenery/guilin.JPG" data-cycle-desc="Guilin, China">
+        <img src="photos/scenery/inplace.JPG" data-cycle-desc="Los Angeles">
+        <img src="photos/scenery/life.JPG" data-cycle-desc="Muir Woods, CA">
+        <img src="photos/scenery/abovetheclouds.JPG" data-cycle-desc="Above the clouds">
+        <img src="photos/scenery/intothewild.JPG" data-cycle-desc="Into The Wild">
+        <img src="photos/scenery/loneflight.JPG" data-cycle-desc="Lone Flight">
+        <img src="photos/scenery/vancouver.JPG" data-cycle-desc="Vancouver, BC">
+        <img src="photos/scenery/ski.PNG" data-cycle-desc="Tahoe, CA">
 
+
+        <script src="js/jquery.cycle2.min.js"></script>
+        <script src="js/jquery.cycle2.caption2.min.js"></script>
+        <script src="js/jquery.cycle2.center.js"></script>
+    </div>
+  </div>
 </div>
 
 
