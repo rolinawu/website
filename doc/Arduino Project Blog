@@ -56,12 +56,6 @@
   while (!Serial) {}
 
 
-  //Project 4
-  /*pinMode(6, OUTPUT); //Build in LED is located at pin 13 //Always initialized as output pins
-    Serial.begin(9600);
-    while(!Serial){
-    }*/
-
 }
 
 void loop() { //runs continuously
@@ -143,6 +137,13 @@ void loop() { //runs continuously
     delay(photocell);
     Serial.println(photocell);
     //need to open Serial Monitor(in Tools Menu)*/
+    
+  // Notes for Project 4
+  /*pinMode(6, OUTPUT); //Build in LED is located at pin 13 //Always initialized as output pins
+    Serial.begin(9600);
+    while(!Serial){
+    }*/
+
   //Project 5
   /*
     digitalWrite(red, HIGH);
